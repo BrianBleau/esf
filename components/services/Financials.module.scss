@@ -1,0 +1,28 @@
+@import '../../styles/globals.module.scss';
+
+.sectionContainer{
+    width: 100vw;
+    height: 12rem;
+    background-color: $primaryDark;
+    padding: 1rem;
+    display: flex;
+
+    .taxForm{
+        background-image: url('../../public/taxForm.jpg');
+        background-color: $primaryDark;
+        background-position: center;
+        background-size: cover;
+        border-radius: 40% 55% 62% 47% / 41% 44% 56% 60%;
+        border: 2px solid gold;
+        height: 150px;
+        width: 150px;
+    }
+
+    p{
+        color: white;
+        width: 60%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+}

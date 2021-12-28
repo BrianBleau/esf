@@ -1,0 +1,26 @@
+@import '../../styles/globals.module.scss';
+
+.sectionContainer{
+    width: 100vw;
+    height: fit-content;
+    background-color: $primaryLight;
+    padding: 1rem;
+    display: flex;
+
+    .socialThinking{
+        background-image: url('../../public/socialThinking.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 250px;
+        width: 250px;
+    }
+
+    p{
+        color: $primaryDark;
+        width: 50%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
