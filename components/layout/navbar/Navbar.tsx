@@ -1,5 +1,6 @@
 import styles from './Navbar.module.scss'
 import {slide as Menu} from 'react-burger-menu';
+import Link from 'next/link';
 
 export default function Navbar(props: any) {
 
@@ -7,8 +8,12 @@ export default function Navbar(props: any) {
         <nav className={styles.navContainer}>
             <span className={styles.navTitle}>ESF</span>
             <Menu right {...props}>
-                <a href="/">Home</a>
-                <a href="/services">Services</a>
+                <Link href={'/'}>
+                    <a>Home</a>
+                </Link>
+                <Link href={'/services'}>
+                    <a>Services</a>
+                </Link>
             </Menu>
         </nav>
     )
