@@ -1,0 +1,26 @@
+@import '../../styles/globals.module.scss';
+
+.overviewContainer{
+    background-color: $primaryLight;
+    padding: 1.2rem;
+
+    h1{
+        font-family: 'Merriweather', serif;
+        text-align: center;
+        color: $primaryDark;
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.5px;
+        border: 2px solid $primaryDark;
+        border-radius: 0.5rem;
+        background-color: $primaryDark;
+        margin: 1rem;
+        padding: 1rem;
+        box-shadow: -5px 5px 8px $gray;
+    }
+}

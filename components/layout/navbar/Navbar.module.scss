@@ -1,0 +1,21 @@
+@import '../../../styles/globals.module.scss';
+
+.navContainer{
+    height: 3.5rem;
+    width: 100vw;
+    background-color: $primaryLight;
+    position: sticky;
+    top: 0;
+
+    .navTitle{
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-style: bold;
+        width: fit-content;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-left: 0.5rem;
+    }
+}
