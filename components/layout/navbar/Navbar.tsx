@@ -27,7 +27,7 @@ export default function Navbar(props: any) {
         <div className={burgerOpen === true ? `${styles.overlay} ${styles.active}` : styles.overlay} onClick={burgerHandler}/>
             <nav className={styles.navContainer}>
                 <Link href={'/'}>
-                    <a href="/" className={styles.navLink} id="nav-name">ESF</a>
+                    ESF
                 </Link>
                 <ul className={burgerOpen ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
                     <li className="nav-item">
