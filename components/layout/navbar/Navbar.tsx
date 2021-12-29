@@ -20,7 +20,7 @@ export default function Navbar(props: any) {
 
     useEffect(() => {
         setBurgerOpen(false);
-    }, [router.asPath])
+    }, [router.asPath])    
 
     return(
         <>
@@ -31,14 +31,18 @@ export default function Navbar(props: any) {
                 </Link>
                 <ul className={burgerOpen ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
                     <li className="nav-item">
-                    <Link href={'/'}>
-                        <a href="/" className={styles.navLink}>Home</a>
-                    </Link>
+                    <div onClick={burgerHandler}>
+                        <Link href={'/'}>
+                            Home
+                        </Link>
+                    </div>
                     </li>
                     <li className="nav-item">
-                    <Link href={'/services'}>
-                        <a href="/services" className={styles.navLink}>Services</a>
-                    </Link>
+                    <div onClick={burgerHandler}>
+                        <Link href={'/services'}>
+                            Services
+                        </Link>
+                    </div>
                     </li>
                 </ul>
                 <div className={burgerOpen === true ?`${styles.burger} ${styles.active} ` : styles.burger} onClick={burgerHandler}>

@@ -31,7 +31,7 @@
     padding: 1rem 1.5rem;
     width: 100vw;
 
-    .navLink{
+    a{
         color: $primaryDark;
         font-size: 2rem;
     }
@@ -54,7 +54,7 @@
         top: 0;
         transform: translateX(1000px);
 
-        .navLink {
+        a {
             font-size: 2rem;
             font-weight: 400;
             color: white;
