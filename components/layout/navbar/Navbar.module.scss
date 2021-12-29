@@ -1,21 +1,96 @@
 @import '../../../styles/globals.module.scss';
 
-.navContainer{
-    height: 3.5rem;
+.overlay{
+    display: none;
+    height: 100vh;
     width: 100vw;
-    background-color: $primaryLight;
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
     top: 0;
-
-    .navTitle{
-        font-size: 2.5rem;
-        font-family: 'Roboto', sans-serif;
-        font-style: bold;
-        width: fit-content;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin-left: 0.5rem;
-    }
+    left: 0;
+    z-index: 1;
 }
+
+.overlay.active{
+    display: inline-block;
+}
+
+.navContainer {
+    background-color: $primaryLight;
+    height: 3.2rem;
+    width: 100vw;
+    border-bottom: 0.3rem solid gold;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    position: sticky;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 100vw;
+
+    .navLink{
+        color: $primaryDark;
+        font-size: 2rem;
+    }
+
+    .navMenu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        background-color: $primaryMed;
+        height: 40vh;
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+        list-style: none;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        top: 0;
+        transform: translateX(1000px);
+
+        .navLink {
+            font-size: 2rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            align-self: center;
+          }
+      }
+
+      .navMenu.active {
+        transform: translateX(0px);
+      }
+
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        background-color: $primaryDark;
+        right: 1em;
+      }
+
+      .burger {
+        position: relative;
+      }
+      
+      .burger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      
+      .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+  }

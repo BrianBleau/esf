@@ -1,20 +1,52 @@
 import styles from './Navbar.module.scss'
-import {slide as Menu} from 'react-burger-menu';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import Router, { useRouter } from 'next/router';
 
 export default function Navbar(props: any) {
 
+    const [burgerOpen, setBurgerOpen] = useState(false);
+    const router = useRouter();
+
+    const burgerHandler = (e : any) => {
+        e.preventDefault;
+        if(burgerOpen === false){
+            setBurgerOpen(true);
+        }
+        if(burgerOpen === true){
+            setBurgerOpen(false);
+        }
+    }
+
+    useEffect(() => {
+        setBurgerOpen(false);
+    }, [router.asPath])
+
     return(
-        <nav className={styles.navContainer}>
-            <span className={styles.navTitle}>ESF</span>
-            <Menu right {...props}>
+        <>
+        <div className={burgerOpen === true ? `${styles.overlay} ${styles.active}` : styles.overlay} onClick={burgerHandler}/>
+            <nav className={styles.navContainer}>
                 <Link href={'/'}>
-                    <a>Home</a>
+                    <a href="/" className={styles.navLink} id="nav-name">ESF</a>
                 </Link>
-                <Link href={'/services'}>
-                    <a>Services</a>
-                </Link>
-            </Menu>
-        </nav>
+                <ul className={burgerOpen ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
+                    <li className="nav-item">
+                    <Link href={'/'}>
+                        <a href="/" className={styles.navLink}>Home</a>
+                    </Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link href={'/services'}>
+                        <a href="/services" className={styles.navLink}>Services</a>
+                    </Link>
+                    </li>
+                </ul>
+                <div className={burgerOpen === true ?`${styles.burger} ${styles.active} ` : styles.burger} onClick={burgerHandler}>
+                    <div className={styles.bar}></div>
+                    <div className={styles.bar}></div>
+                    <div className={styles.bar}></div>
+                </div>
+            </nav>
+        </>
     )
 }
