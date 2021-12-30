@@ -24,7 +24,7 @@ export default function Navbar(props: any) {
   }, [router.asPath]);
 
   return (
-    <>
+    <header>
       <div
         className={
           burgerOpen === true
@@ -76,6 +76,6 @@ export default function Navbar(props: any) {
           <div className={styles.bar}></div>
         </div>
       </nav>
-    </>
+    </header>
   );
 }
