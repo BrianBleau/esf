@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function Navbar(props: any) {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -42,12 +42,24 @@ export default function Navbar(props: any) {
         >
           <li className="nav-item">
             <div onClick={burgerHandler}>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"}>
+                <a className={router.pathname == "/" ? styles.active : ""}>
+                  Home
+                </a>
+              </Link>
             </div>
           </li>
           <li className="nav-item">
             <div onClick={burgerHandler}>
-              <Link href={"/services"}>Services</Link>
+              <Link href={"/services"}>
+                <a
+                  className={
+                    router.pathname == "/services" ? styles.active : ""
+                  }
+                >
+                  Services
+                </a>
+              </Link>
             </div>
           </li>
         </ul>
