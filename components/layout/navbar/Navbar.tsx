@@ -2,6 +2,7 @@ import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function Navbar(props: any) {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -34,7 +35,8 @@ export default function Navbar(props: any) {
         onClick={burgerHandler}
       />
       <nav className={styles.navContainer}>
-        <Link href={"/"}>ESF</Link>
+        <Image src={"/ESFLogoMed.png"} height={40} width={40}></Image>
+        <div className={styles.title}>ESF</div>
         <ul
           className={
             burgerOpen ? `${styles.navMenu} ${styles.active}` : styles.navMenu
