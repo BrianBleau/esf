@@ -11,6 +11,13 @@ const Testimonials: NextPage = () => {
       <p>And also wrote me a letter of recommondation for employment. Dr. D, thank you for all you do for people and I am so glad to have you has a friend and mentor. THANK YOU!</p>
       <p>-James</p>
       </Testimonial>
+      <Testimonial>
+        <p>Lessons I have learned from business classes and ESF, is the nooks and crannies one would not normally think about being involved in business. There are many laws and federal and state guidelines to running a business successfully. There are contracts and policies that businesses agree to, to adhere to those laws and guidelines. I believe the legal aspects of business are perhaps the most important part of a business to keep government off your back. Having all the I's dotted and T's crossed makes for way less stress and headaches in business so other things can be focused on to make the business prosper.</p>
+        <p>ESF Training added business knowledge and has also given me new insight into my personal change as an incarcerated adult. I understand that its more than just someone's personal life or incarceration period that has procedures. It is pretty much everything which makes me feel not so targeted by the system. These ESF courses are mind openers is what I like to call them. Mind opening gives us fresh and more realistic perspective on what's really happening in the world.</p>
+        <p>My action plan is to get released and use the practical knowledge in these courses to help me run the family business of all the rental properties we own. I hope to bring fresh knowledge to the table in the business to help everything run more efficiently and effectively. I have always had passion for my family ran business and a desire to be the ingredient that makes it expand to new heights. I learned through practical knowledge and getting to know Doctor D that this is all in the realm of probability.</p>
+        <p>Life is amazing with the knowledge that is free and up for grabs. Coming to MTC and working with ESF and Doctor D has given me knowledge that is of high relevance of my life and future aspirations, thank you for the opportunity to share my new insight.</p>
+        <p>-Ryan</p>
+      </Testimonial>
     </>
   );
 };

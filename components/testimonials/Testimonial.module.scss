@@ -5,7 +5,6 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    background-color: $primaryLight;
     overflow: hidden;
 
     .innerContainer{
@@ -15,9 +14,14 @@
         background: radial-gradient(circle, rgba(11,51,1,1) 52%, rgba(8,1,8,1) 72%);
         color: $primaryLight;
         font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
 
         p{
             padding: 0 1rem;
+        }
+
+        .svgBottom{
+            transform: translateY(6px);
         }
     }
 }
