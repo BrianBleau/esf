@@ -1,0 +1,23 @@
+@import '../../styles/globals.module.scss';
+
+.jailbirdContainer{
+    background: url('../../public/jailbird.jpg');
+    height: 14rem;
+    width: 100vw;
+    background-position: bottom 85% right 100%;
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-blend-mode: overlay;
+
+    .jailbirdInner{
+        height: 100%;
+        width: 38%;
+        color: $primaryLight;
+        margin: 0;
+        padding: 1rem 1rem;
+
+        p{
+            margin: 0;
+        }
+    }
+}

@@ -64,6 +64,15 @@ export default function Navbar(props: any) {
               </Link>
             </div>
           </li>
+          <li className="nav-item">
+            <div onClick={burgerHandler}>
+              <Link href={"/testimonials"}>
+                <a className={router.pathname == "/testimonials" ? styles.active : ""}>
+                  Testimonials
+                </a>
+              </Link>
+            </div>
+          </li>
         </ul>
         <div
           className={

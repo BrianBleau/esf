@@ -1,0 +1,22 @@
+@import '../../styles/globals.module.scss';
+
+.testimonialContainer{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: $primaryLight;
+    overflow: hidden;
+
+    .innerContainer{
+        width: 100vw;
+        height: fit-content;
+        background-color: $primaryDark;
+        color: $primaryLight;
+        font-size: 1.2rem;
+
+        p{
+            padding: 0 1rem;
+        }
+    }
+}
