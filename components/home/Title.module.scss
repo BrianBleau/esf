@@ -16,6 +16,13 @@
         height: 28rem;
     }
 
+    @include for-desktop-up {
+        background-size: 59%;
+        background-position: top 42% left 70%;
+        background-repeat: repeat;
+    }
+
+
     div{
         color: white;
         font-size: 2.2rem;
@@ -26,6 +33,10 @@
 
         @include for-tablet-up{
             font-size: 3.2rem;
+        }
+
+        @include for-desktop-up {
+            margin-right: 20%;
         }
     }
 }

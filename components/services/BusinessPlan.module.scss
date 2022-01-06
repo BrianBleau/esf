@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-evenly;
 
+    @include for-desktop-up {
+        padding-left: 20rem;
+    }
+
     .profitFirst{
         background-image: url('../../public/profitFirst.webp');
         background-color: $primaryDark;
@@ -28,6 +32,12 @@
 
         @include for-tablet-up{
             font-size: 2rem;
+        }
+        
+        @include for-desktop-up {
+            font-size: 3rem;
+            margin: 0;
+            align-self: center;
         }
     }
 }

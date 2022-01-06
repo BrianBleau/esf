@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-evenly;
 
+    @include for-desktop-up {
+        padding-right: 20rem;
+    }
+
     .socialThinking{
         background-image: url('../../public/socialThinking.svg');
         background-position: center;
@@ -26,6 +30,12 @@
 
         @include for-tablet-up{
             font-size: 2rem;
+        }
+        
+        @include for-desktop-up {
+            font-size: 3rem;
+            margin: 0;
+            align-self: center;
         }
     }
 }

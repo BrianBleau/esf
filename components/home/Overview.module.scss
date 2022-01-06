@@ -4,6 +4,10 @@
     background-color: $primaryLight;
     padding: 1.2rem;
 
+    @include for-desktop-up {
+        padding: 1.2rem 12rem;
+    }
+
     h1{
         font-family: 'Merriweather', serif;
         text-align: center;
@@ -29,6 +33,12 @@
 
         @include for-tablet-up{
             font-size: 2rem;
+        }
+        
+        @include for-desktop-up {
+            font-size: 3rem;
+            margin: 0;
+            align-self: center;
         }
     }
 }
