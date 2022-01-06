@@ -21,4 +21,8 @@ main{
   height: fit-content;
   position: absolute;
   top: 3rem;
+
+  @include for-tablet-up {
+    top: 5rem;
+  }
 }

@@ -35,7 +35,9 @@ export default function Navbar(props: any) {
         onClick={burgerHandler}
       />
       <nav className={styles.navContainer}>
-        <Image src={"/ESFLogoMed.png"} height={40} width={40}></Image>
+        <div className={styles.logoContainer}>
+          <Image src={"/ESFLogoMed.png"} layout="fill"></Image>
+        </div>
         <div className={styles.title}>ESF</div>
         <ul
           className={

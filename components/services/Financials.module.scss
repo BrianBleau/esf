@@ -6,6 +6,7 @@
     background-color: $primaryDark;
     padding: 1rem;
     display: flex;
+    justify-content: space-evenly;
 
     .taxForm{
         background-image: url('../../public/taxForm.webp');
@@ -24,5 +25,9 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         margin-left: 1rem;
+
+        @include for-tablet-up{
+            font-size: 2rem;
+        }
     }
 }

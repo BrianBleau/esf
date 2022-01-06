@@ -18,6 +18,11 @@
 
         p{
             padding: 0 1rem;
+
+            @include for-tablet-up {
+                font-size: 1.3rem;
+                padding: 0 2rem;
+            }
         }
 
         .svgBottom{

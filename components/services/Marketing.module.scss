@@ -6,6 +6,7 @@
     background-color: $primaryLight;
     padding: 1rem;
     display: flex;
+    justify-content: space-evenly;
 
     .socialThinking{
         background-image: url('../../public/socialThinking.svg');
@@ -22,5 +23,9 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         margin-right: 1rem;
+
+        @include for-tablet-up{
+            font-size: 2rem;
+        }
     }
 }

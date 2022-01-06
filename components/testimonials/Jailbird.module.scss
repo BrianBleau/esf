@@ -19,6 +19,10 @@
 
         p{
             margin: 0;
+
+            @include for-tablet-up {
+                font-size: 1.3rem;
+            }
         }
     }
 }
