@@ -22,7 +22,7 @@ const Testimonials: NextPage = () => {
         <p>-Ryan</p>
       </Testimonial>
       <Testimonial>
-        <p><RiDoubleQuotesL />Because of ESF classes I will stand up for myself and show that anyone can make a mistake and grow from it. Most people know you can learn and change from the mistakes you made, especially if you work hard to prove yourself to them.</p>
+        <p><RiDoubleQuotesL />Because of ESF classes I will stand up for myself and show that anyone can make a mistake and grow from it. Most people know you can learn and change from the mistakes you made, especially if you work hard to prove yourself to them.<RiDoubleQuotesR /></p>
         <p>-Howard</p>
       </Testimonial>
     </>
