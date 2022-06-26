@@ -28,6 +28,8 @@ export default function Overview () {
                 Ohio for over five years. Additionally, he has a lifetime of experience working with at-risk youth
                 and young men through the State of Ohio, The United States Army, The Boy Scouts of America,
                 and other local community programs.
+                <br />
+                <br />
                 ESF and their clients have a lifetime commitment to each other and their mutual success. The
                 non-profit works closely with each ex-felon from planning, start-up, and implementation to
                 break-even points. ESF has helped ex-felons start many businesses, including a food truck,
