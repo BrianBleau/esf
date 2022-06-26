@@ -30,7 +30,11 @@
         }
 
         .svgBottom{
-            transform: translateY(64px);
+            transform: translateY(16px);
+
+            @include for-desktop-up {
+                transform: translateY(64px);
+            }
         }
     }
 }
