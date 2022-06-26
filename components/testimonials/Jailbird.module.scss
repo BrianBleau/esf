@@ -11,7 +11,7 @@
     border-bottom: 1rem solid black;
 
     @include for-desktop-up {
-        height: 28rem;
+        height: 32rem;
     }
 
     .jailbirdInner{
@@ -29,7 +29,7 @@
             }
             @include for-desktop-up {
                 font-size: 1.8rem;
-                padding: 2rem 12rem;
+                padding: 2rem 6rem;
             }
         }
     }
