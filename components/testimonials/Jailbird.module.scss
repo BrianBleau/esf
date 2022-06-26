@@ -10,6 +10,10 @@
     background-blend-mode: overlay;
     border-bottom: 1rem solid black;
 
+    @include for-desktop-up {
+        height: 28rem;
+    }
+
     .jailbirdInner{
         height: 100%;
         width: 38%;
@@ -22,6 +26,10 @@
 
             @include for-tablet-up {
                 font-size: 1.3rem;
+            }
+            @include for-desktop-up {
+                font-size: 1.8rem;
+                padding: 2rem 12rem;
             }
         }
     }

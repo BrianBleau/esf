@@ -21,6 +21,10 @@ const Testimonials: NextPage = () => {
         <p>Life is amazing with the knowledge that is free and up for grabs. Coming to MTC and working with ESF and Doctor D has given me knowledge that is of high relevance of my life and future aspirations, thank you for the opportunity to share my new insight.<RiDoubleQuotesR /></p>
         <p>-Ryan</p>
       </Testimonial>
+      <Testimonial>
+        <p><RiDoubleQuotesL />Because of ESF classes I will stand up for myself and show that anyone can make a mistake and grow from it. Most people know you can learn and change from the mistakes you made, especially if you work hard to prove yourself to them.</p>
+        <p>-Howard</p>
+      </Testimonial>
     </>
   );
 };
