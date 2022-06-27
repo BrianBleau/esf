@@ -1,4 +1,6 @@
-import styles from './Overview.module.scss'
+import styles from './Overview.module.scss';
+import Image from 'next/image';
+import davisonPhoto from '/public/DavisonTomphoto2.jpg'
 
 export default function Overview () {
     return(
@@ -22,7 +24,18 @@ export default function Overview () {
             </div>
             <div>
                 <h1>More About ESF</h1>
+                
                 <p>
+                    <span className={styles.director}>
+                        <Image
+                        src={davisonPhoto}
+                        alt="Picture of the director"
+                        width={200}
+                        height={200}
+                        />
+                
+                </span>
+                    
                 ESF’s Director, Dr. Thomas Davison, created the training curriculum for these modules. Dr.
                 Davison has been teaching entrepreneur-focused business coursework in two State prisons in
                 Ohio for over five years. Additionally, he has a lifetime of experience working with at-risk youth
