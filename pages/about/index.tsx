@@ -1,7 +1,12 @@
 import { NextPage } from "next";
+import AboutHeader from "../../components/about/aboutHeader";
 
 const About: NextPage = () => {
-  return <>About</>;
-};
+  return (
+    <>
+      <AboutHeader />
+    </>
+  )
+}
 
 export default About;
